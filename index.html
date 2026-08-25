@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Tashini Samarasinghe — UI/UX Designer & Full-Stack Developer based in Sri Lanka.">
+  <title>Tashini Samarasinghe | UI/UX & Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=DM+Sans:ital,opsz,wght@0,9..40,300..600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <canvas class="mesh" id="mesh" aria-hidden="true"></canvas>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <aside class="social-dock" aria-label="Social links">
+    <a href="https://github.com/Tashzzz" target="_blank" rel="noopener" aria-label="GitHub"><span class="social-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.4-5.5-6a4.7 4.7 0 0 1 1.3-3.3c-.1-.3-.6-1.6.1-3.3 0 0 1.1-.3 3.4 1.3a11.7 11.7 0 0 1 6.2 0c2.3-1.6 3.4-1.3 3.4-1.3.7 1.7.3 3 .1 3.3a4.7 4.7 0 0 1 1.3 3.3c0 4.6-2.8 5.7-5.5 6 .4.3.8 1 .8 2v2.9c0 .3.2.7.8.6A12 12 0 0 0 12 .3Z"/></svg></span></a>
+    <a href="https://www.linkedin.com/in/tashini-samarasinghe/" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="social-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.5 3h-17A1.5 1.5 0 0 0 2 4.5v15A1.5 1.5 0 0 0 3.5 21h17a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 20.5 3ZM8 18H5V9h3v9ZM6.5 7.8A1.8 1.8 0 1 1 6.5 4.2a1.8 1.8 0 0 1 0 3.6ZM19 18h-3v-4.4c0-1-.1-2.3-1.5-2.3s-1.7 1.1-1.7 2.2V18h-3V9h2.9v1.2h.1c.4-.8 1.3-1.6 2.8-1.6 3 0 3.4 2 3.4 4.5V18Z"/></svg></span></a>
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><span class="social-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6h1.8V3.8c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1V10H8v3h2.6v8h2.9Z"/></svg></span></a>
+    <a href="https://wa.me/94770438088" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="social-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.9-1.3A9.5 9.5 0 1 0 12 2.5Zm0 17.3a7.8 7.8 0 0 1-4-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A7.8 7.8 0 1 1 12 19.8Zm4.3-5.8c-.2-.1-1.3-.7-1.5-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5.1a6.3 6.3 0 0 1-1.8-1.1 6.8 6.8 0 0 1-1.3-1.6c-.1-.2 0-.3.1-.4l.4-.5.2-.4c.1-.1 0-.3 0-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.2 1.6 2.5 3.9 3.5 1.5.7 2.1.7 2.5.6.5 0 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.2-.2-.4-.3Z"/></svg></span></a>
+  </aside>
+  <a class="email-rail" href="mailto:satmsamarasinghe1004@gmail.com">satmsamarasinghe1004@gmail.com</a>
+  <a class="back-top" href="#home" aria-label="Back to top">&#8593;</a>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Tashini<span>.</span></a>
+      <div class="nav__status"><span class="nav__dot"></span> Available for work</div>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="nav__cv" href="Certificates/Tashini_Samarasinghe_Fullstack_Intern_CV.pdf" download>Download CV</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="hero__meta">
+            <span class="hero__availability"><i></i> Available for Internships / Roles</span>
+          </div>
+          <p class="hero__greeting">Hello, I'm</p>
+          <h1 class="hero__title">
+            <span class="hero__title-top">Tashini <em>Samarasinghe</em></span>
+            <span class="hero__title-bottom">UX Designer &amp; Full-Stack Developer</span>
+          </h1>
+          <p class="hero__subtitle">
+            I create thoughtful interfaces and ship them as fast, reliable web apps.
+            My focus is clear UX, strong visuals, and practical full-stack execution.
+          </p>
+          <div class="hero__actions">
+            <a href="#work" class="button button--primary">View projects</a>
+            <a href="#contact" class="button button--ghost">Contact me</a>
+          </div>
+        </div>
+
+        <aside class="hero__panel">
+          <div class="orb" aria-hidden="true">
+            <div class="orb__rings"></div>
+            <img class="orb__img" src="images/profile pic.jpg" alt="Portrait of Tashini Samarasinghe">
+          </div>
+
+          <div class="hero__panel-card hero__panel-card--stats">
+            <div>
+              <span class="panel__label">Focus</span>
+              <strong>UI/UX + Full-Stack</strong>
+            </div>
+            <div>
+              <span class="panel__label">Current</span>
+              <strong>Figma • MERN Stack • Spring Boot</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section features" id="about">
+      <div class="container">
+        <div class="section__header section__header--compact">
+          <span class="section__kicker">&lt; / &gt; My Skills</span>
+          <h2 class="section__title">What I <span class="italic">Do</span></h2>
+        </div>
+        <div class="features__grid">
+          <article class="feature-card">
+            <h3>Frontend Development</h3>
+            <p>Responsive interfaces that feel considered, fast, and clear.</p>
+            <div class="tag-row"><span>React</span><span>JavaScript</span><span>CSS</span></div>
+          </article>
+          <article class="feature-card">
+            <h3>UI/UX Design</h3>
+            <p>Human-centered flows shaped into practical visual systems.</p>
+            <div class="tag-row"><span>Wireframing</span><span>Figma</span><span>Prototyping</span></div>
+          </article>
+          <article class="feature-card">
+            <h3>Full-Stack Development</h3>
+            <p>Complete products from robust API logic to reliable data layers.</p>
+            <div class="tag-row"><span>Backend</span><span>APIs</span><span>Databases</span></div>
+          </article>
+          <article class="feature-card">
+            <h3>Mobile Development</h3>
+            <p>Focused mobile experiences designed for clarity, speed, and ease.</p>
+            <div class="tag-row"><span>Kotlin</span><span>Android</span><span>Mobile UI/UX</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section__header section__header--compact">
+          <h2 class="section__title">Featured <span class="italic">work</span></h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card--featured">
+            <img src="images/Lib.png" alt="Smart Library System preview" class="project-card__image">
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__num">01</span>
+                <div class="project-card__tags"><span>Web</span><span>JavaScript</span></div>
+              </div>
+              <h3>Smart Library System</h3>
+              <p>Library management web app built as a team project with practical workflows.</p>
+              <a href="https://github.com/Nipuni1111/Smart-Library-Management-System" target="_blank" rel="noopener" class="project-card__link">Open GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/UniOps.jpeg" alt="UniOps dashboard preview" class="project-card__image">
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__num">02</span>
+                <div class="project-card__tags"><span>React</span><span>Spring Boot</span></div>
+              </div>
+              <h3>UniOps</h3>
+              <p>University operations platform for resource booking, ticket handling, and live operational monitoring.</p>
+              <a href="https://github.com/Tashzzz/it3030-paf-2026-smart-campus-group39" target="_blank" rel="noopener" class="project-card__link">Open GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/railway.png" alt="Sri Lankan Railway website redesign preview" class="project-card__image">
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__num">03</span>
+                <div class="project-card__tags"><span>UI/UX</span><span>Figma</span></div>
+              </div>
+              <h3>Sri Lankan Railway Redesign</h3>
+              <p>A modern website redesign focused on clearer journey planning, service discovery, and accessible travel information.</p>
+              <a href="https://www.figma.com/design/z1toIm2GnZLLIui3Dpl1j6/SL-RAILWAY?node-id=0-1&amp;t=YWCHg88gnQrYR1wV-1" target="_blank" rel="noopener" class="project-card__link">View Figma design</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/MovieMate.jpeg" alt="MovieMate concept preview" class="project-card__image">
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__num">04</span>
+                <div class="project-card__tags"><span>UI/UX</span><span>Figma</span></div>
+              </div>
+              <h3>MovieMate</h3>
+              <p>Movie booking concept shaped from research, flows, and visual design exploration.</p>
+              <a href="https://www.figma.com/design/6RMa8tRfZbD7VR9KpApe9K/MovieMate?node-id=0-1" target="_blank" rel="noopener" class="project-card__link">View prototype</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/fiscord1.png" alt="Fiscord app preview" class="project-card__image">
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__num">05</span>
+                <div class="project-card__tags"><span>Android</span><span>Kotlin</span></div>
+              </div>
+              <h3>Fiscord</h3>
+              <p>Native personal finance app focused on tracking, clarity, and mobile-first usability.</p>
+              <a href="https://github.com/Tashzzz/Fiscord" target="_blank" rel="noopener" class="project-card__link">Open GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__placeholder project-card__placeholder--assist" role="img" aria-label="All-in-one Personal Assistance App preview"><span>assist / 24</span></div>
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__num">06</span>
+                <div class="project-card__tags"><span>MERN</span><span>Payments</span></div>
+              </div>
+              <h3>All-in-one Personal Assistance App</h3>
+              <p>Marketplace application with booking flows, payments, reviews, and admin/provider dashboards.</p>
+              <a href="https://github.com/Tashzzz/All-in-one-Personal-Assistance-App-main--2-" target="_blank" rel="noopener" class="project-card__link">Open GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__placeholder project-card__placeholder--translator" role="img" aria-label="Singlish to Sinhala Translator preview"><span>සිං</span></div>
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__num">07</span>
+                <div class="project-card__tags"><span>Python</span><span>Playwright</span></div>
+              </div>
+              <h3>Singlish → Sinhala Translator</h3>
+              <p>A web transliteration tool with extensive Playwright-driven automated tests and a data-driven test runner.</p>
+              <a href="#" class="project-card__link">Details</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__header section__header--compact">
+          <h2 class="section__title">Technical <span class="italic">Proficiency</span></h2>
+        </div>
+        <div class="skills__grid">
+          <div class="skill-switcher" data-skill-switcher>
+            <div class="skill-switcher__tabs" role="tablist" aria-label="Skill focus">
+              <button class="skill-tab active" type="button" role="tab" aria-selected="true" data-skill="design">Product &amp; UX Design</button>
+              <button class="skill-tab" type="button" role="tab" aria-selected="false" data-skill="engineering">Full-Stack Engineering</button>
+            </div>
+            <div class="skill-panel active" data-panel="design" role="tabpanel">
+              <div class="skill-card"><span class="skill-card__num">01</span><h3>Research</h3><p>Turning fuzzy problems into clear user needs, flows, and opportunities.</p></div>
+              <div class="skill-card"><span class="skill-card__num">02</span><h3>Interface systems</h3><p>Wireframes, prototypes, and design systems that stay usable at scale.</p></div>
+              <div class="skill-card"><span class="skill-card__num">03</span><h3>Visual direction</h3><p>Distinctive layouts, thoughtful motion, and visual hierarchy with purpose.</p></div>
+            </div>
+            <div class="skill-panel" data-panel="engineering" role="tabpanel" hidden>
+              <div class="skill-card"><span class="skill-card__num">01</span><h3>Frontend</h3><p>Responsive React interfaces with clean component architecture and polish.</p></div>
+              <div class="skill-card"><span class="skill-card__num">02</span><h3>Backend</h3><p>REST APIs, auth, business logic, and integrations built to be dependable.</p></div>
+              <div class="skill-card"><span class="skill-card__num">03</span><h3>Data &amp; delivery</h3><p>MongoDB, MySQL, GitHub Actions, and testing that keeps releases moving.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-categories" aria-label="Technology stack">
+          <article class="tech-category"><span class="tech-category__label">01 / Frontend</span><div><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Vite</span></div></article>
+          <article class="tech-category"><span class="tech-category__label">02 / Backend</span><div><span>Node.js</span><span>Express</span><span>Spring Boot</span><span>REST APIs</span></div></article>
+          <article class="tech-category"><span class="tech-category__label">03 / Data</span><div><span>MongoDB</span><span>MySQL</span><span>JWT Auth</span><span>Data Modeling</span></div></article>
+          <article class="tech-category"><span class="tech-category__label">04 / Tools &amp; Design</span><div><span>Figma</span><span>Git</span><span>GitHub Actions</span><span>Playwright</span><span>Kotlin</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey" id="experience">
+      <div class="container">
+        <div class="section__header section__header--compact"><h2 class="section__title">Education &amp; <span class="italic">Qualifications</span></h2></div>
+        <div class="timeline"><article><span>2023 - Present</span><h3>BSc (Hons) in IT Specializing in Information Technology (Undergraduate)</h3><p>Sri Lanka Institute of Information Technology (SLIIT)</p></article><article><span>2022</span><h3>G.C.E (A/L) | Engineering Technology</h3><p>Rathnavali Balika Vidyalaya, Gampaha</p></article><article><span>Dec 2018</span><h3>G.C.E (O/L)</h3><p>Rathnavali Balika Vidyalaya, Gampaha</p></article></div>
+      </div>
+    </section>
+
+    <section class="section certificates" id="certificates">
+      <div class="container"><div class="section__header section__header--compact"><span class="section__kicker">🎖️ Achievements</span><h2 class="section__title">My <span class="italic">Certificates</span></h2></div><div class="certificate-grid"><article><div class="certificate-art certificate-art--figma">F</div><h3>Design User Experiences with Figma</h3><p>LinkedIn Learning · Completed 2025</p><div class="certificate-links"><a href="Certificates/CertificateOfCompletion_Design%20User%20Experiences%20with%20Figma%20(3).pdf" target="_blank" rel="noopener">View certificate</a><a href="https://www.linkedin.com/learning/paths/design-user-experiences-with-figma" target="_blank" rel="noopener">View course</a></div></article><article><div class="certificate-art certificate-art--mongo">M</div><h3>Getting Started with MongoDB Atlas</h3><p>MongoDB · Certificate of completion</p><div class="certificate-links"><a href="Certificates/it23217140-samarasinghe-satm-5358def3-fea1-4462-90c4-54d058b8619d-certificate.pdf" target="_blank" rel="noopener">View certificate</a></div></article></div></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div>
+          <h2 class="contact__headline">Let’s work <span class="italic">together</span>.</h2>
+          <p class="contact__intro">Open to UI/UX design, full-stack development, freelance collaborations, and product-focused project work.</p>
+        </div>
+        <div class="contact__links">
+          <a href="https://github.com/Tashzzz" class="contact__link" target="_blank" rel="noopener">
+            <span class="contact__link-label">GitHub</span>
+            <span class="contact__link-value">github.com/Tashzzz</span>
+            <span class="contact__link-arrow">&#8599;</span>
+          </a>
+          <a href="https://www.linkedin.com/in/tashini-samarasinghe/" class="contact__link" target="_blank" rel="noopener">
+            <span class="contact__link-label">LinkedIn</span>
+            <span class="contact__link-value">tashini-samarasinghe</span>
+            <span class="contact__link-arrow">&#8599;</span>
+          </a>
+          <a href="mailto:satmsamarasinghe1004@gmail.com" class="contact__link">
+            <span class="contact__link-label">Email</span>
+            <span class="contact__link-value">satmsamarasinghe1004@gmail.com</span>
+            <span class="contact__link-arrow">&#8599;</span>
+          </a>
+        </div>
+        <form class="contact-form" action="mailto:satmsamarasinghe1004@gmail.com" method="post" enctype="text/plain">
+          <label>Name<input type="text" name="name" required></label><label>Email<input type="email" name="email" required></label><label>Subject<input type="text" name="subject"></label><label>Message<textarea name="message" rows="4" required></textarea></label><button class="button button--primary" type="submit">Send message <span>&#8599;</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Tashini Samarasinghe</p>
+      <p class="footer__made">Designed &amp; built with care</p>
+      <a href="#home" class="footer__top">Back to top &#8593;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
